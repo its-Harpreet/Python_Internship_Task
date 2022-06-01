@@ -1,0 +1,827 @@
+
+
+ 
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mall</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+              
+            width: 100%;
+            background-image: url('/static/images/mall-image.png'),
+                            url("static/images/blur.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+            
+            }
+            
+
+        /* div.polaroid {
+                        width: 80%;
+                        background-color: white;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        margin-bottom: 50px;
+                    } */
+
+        div.container {
+                        text-align: center;
+                        padding: 10px 20px;       
+                        }
+        .column {
+                float: left;
+                width: 30.33%;
+                height: 100%;
+                }
+
+        /* Clear floats after image containers */
+        .row::after {
+                    content: "";
+                    clear: both;
+                    height: 30%;
+                    display: table;
+                    }
+
+        p.text-2{
+            color: crimson;
+            text-align:-webkit-center;
+            text-decoration: underline ;
+            text-decoration-color: black;
+            text-decoration-thickness: auto;
+            font-family: ui-monospace;
+            font-weight: bold;
+            font-size: 32px;
+            margin-top: -11px;
+            margin-bottom: 1px;
+
+            
+        }
+        p.text-5{
+            color: crimson;
+            text-align:-webkit-center;
+            text-decoration: underline ;
+            text-decoration-color: black;
+            text-decoration-thickness: auto;
+            font-family: ui-monospace;
+            font-weight: bold;
+            font-size: 32px;
+            margin-top: -11px;
+            margin-bottom: 1px;
+
+            
+        }
+        p.text{
+            color: crimson;
+            text-align:-webkit-center;
+            text-decoration: underline ;
+            text-decoration-color: black;
+            text-decoration-thickness: auto;
+            font-family: ui-monospace;
+            font-weight: bold;
+            font-size: 32px;
+            margin-top: -11px;
+            margin-bottom: 1px;
+
+            transform: translate3d(0, 0, 20px);
+            
+            position: relative;
+  
+            perspective: 600px;
+
+            transform: rotateY(40deg);
+        }
+        div.box-1{
+            /* height: 350px; */
+            height: 30%;
+            width: 320px;
+            padding:  9px;
+            /* border: 8px solid gray; */
+            margin-top: -15px;
+            margin-bottom: 10px;
+            margin-left: 3px;
+            margin-right: 3px;
+
+            color: blue;
+            transform: translate3d(0, 0, 20px);
+            
+            position: relative;
+  
+            perspective: 600px;
+
+            transform: rotateY(40deg);
+            
+        }
+        div.box-2{
+            /* height: 350px; */
+            height: 30%;
+            width: 320px;
+            padding:  9px;
+            /* border: 8px solid gray; */
+            margin-top: -15px;
+            margin-bottom: 10px;
+            margin-left: 3px;
+            margin-right: 3px;
+
+            /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+        }
+
+        div.box-3{
+                /* height: 319px; */
+                height: 30%;
+                width: 317px;
+                padding:  9px;
+                /* border: 8px solid gray; */
+                margin-top: -53px;
+                margin-bottom: 3px;
+                margin-left: 3px;
+                margin-right: 3px;
+            
+                color: blue;
+                transform: translate3d(0, 0, 20px);
+                position: relative;
+  
+                perspective: 600px;
+
+                transform: rotateY(40deg);
+        }
+        div.box-4{
+                /* height: 300px; */
+                height: 30%;
+                width: 285px;
+                /* border: 8px solid gray; */
+                margin-top: 7px;
+                margin-bottom: 10px;
+                margin-left: 3px;
+                margin-right: 3px;
+                padding-bottom: 4px;
+                padding-top: 12;
+
+                color: blue;
+                transform: translate3d(0, 0, 20px);
+                
+                position: relative;
+  
+                perspective: 600px;
+
+                transform: rotateY(40deg);
+        }
+        div.box-5{
+                /* height: 308px; */
+                height: 30%;
+                width: 285px;
+                padding-top: 12px;
+                padding-bottom: 4px;
+                /* border: 8px solid gray; */
+                margin-top: 7px;
+                margin-bottom: 10px;
+                margin-left: 3px;
+                margin-right: 3px;
+
+                /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+
+                
+        }
+        div.box-6{
+                /* height: 260px; */
+                height: 30%;
+                width: 423px;
+                padding:  14px;
+                /* border: 8px solid gray; */
+                margin-top: -23px;
+                margin-bottom: 3px;
+                margin-left: 2px;
+                margin-right: 3px;
+                
+                position: relative;
+  
+                perspective: 600px;
+                color: blue;
+                transform: translate3d(0, 0, 20px);
+
+                transform: rotateY(40deg);
+
+        }
+
+        
+
+        img.carousel_item-1{
+                        
+        
+                        margin-left: 37px;
+                        margin-top: 20px;
+
+                        /* transform: translate3d(0, 0, 20px); */
+            
+            position: relative;
+  
+            /* perspective: 600px;
+
+            transform: rotateY(23deg); */
+
+                        /* perspective: 600px;
+                        color: blue;
+                        transform: translate3d(0, 0, 20px); */
+                        /* width: 350px;
+                        height: 320px */
+                        /* position: relative;
+
+                        perspective: 600px; */
+        }
+        img.carousel_item-3{
+            
+             
+                        padding-top: 6px;
+        
+                        margin-top: 30px;
+
+                        /* transform: translate3d(0, 0, 20px); */
+            
+            position: relative;
+  
+            /* perspective: 600px;
+
+            transform: rotateY(-25deg); */
+
+                        /* perspective: 600px;
+                        color: blue;
+                        transform: translate3d(0, 0, 20px); */
+                        /* width: 350px;
+                        height: 340px */
+                        /* position: relative;
+
+                        perspective: 600px; */
+        }
+        img.carousel_item-4{
+                        padding: inherit;
+        
+                        margin-bottom: 23px;
+                        margin-top: 29px;
+                        margin-left: 8px;
+                        /* transform: translate3d(0, 0, 20px); */
+                        position: relative;
+                        /* perspective: 600px;
+                        transform: rotateY(21deg); */
+
+                        /* perspective: 600px;
+                        color: blue;
+                        transform: translate3d(0, 0, 20px); */
+                        /* width: 350px;
+                        height: 360px */
+                        /* position: relative;
+
+                        perspective: 600px; */
+        }
+        img.carousel_item-6{
+                        padding-left: 0px;
+                        padding-top: 34px ;
+                        /* border:inset;
+                        margin: auto; */
+                        /* transform: translate3d(0, 0, 20px); */
+                        position: relative;
+                        /* perspective: 600px;
+                        transform: rotateY(-30deg); */
+
+                        /* perspective: 600px;
+                        color: blue;
+                        transform: translate3d(0, 0, 20px); */
+                        /* width: 350px;
+                        height: 445px */
+                        /* position: relative; */
+
+                        /* perspective: 600px; */
+        }
+
+        img.carousel_item-2{
+                        padding: inherit;
+        
+                        margin: auto;
+
+                        transform-style: preserve-3d;
+    transform: perspective(1200px) translateZ(-400px) rotateY(0deg);
+    transition: .1s linear;
+    z-index: 1000;
+
+                        /* perspective: 600px;
+                        color: blue;
+                        transform: translate3d(0, 0, 20px);
+                        width: 150px;
+                        height: 150px */
+                        /* position: relative; */
+
+                        /* perspective: 600px; */
+        }
+        img.carousel_item-5{
+                        padding: inherit;
+        
+                        margin: auto;
+
+                        transform-style: preserve-3d;
+    transform: perspective(1200px) translateZ(-400px) rotateY(0deg);
+    transition: .1s linear;
+    z-index: 1000;
+
+                        /* perspective: 600px;
+                        color: blue;
+                        transform: translate3d(0, 0, 20px);
+                        width: 150px;
+                        height: 150px */
+                        /* position: relative; */
+
+                        /* perspective: 600px; */
+        }
+
+        
+                .button-56 {
+                    align-self: center;
+                align-items: center;
+                background-color: #fee6e3;
+                border: 2px solid #111;
+                border-radius: 8px;
+                box-sizing: border-box;
+                color: #111;
+                cursor: pointer;
+                display: flex;
+                font-family: Inter,sans-serif;
+                font-size: 16px;
+                height: 48px;
+                justify-content: center;
+                line-height: 24px;
+                max-width: 100%;
+                padding: 0 25px;
+                position: relative;
+                text-align: center;
+                text-decoration: none;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+                }
+
+                .button-56:after {
+                background-color: #111;
+                border-radius: 8px;
+                content: "";
+                display: block;
+                height: 48px;
+                left: 0;
+                width: 100%;
+                position: absolute;
+                top: -2px;
+                transform: translate(8px, 8px);
+                transition: transform .2s ease-out;
+                z-index: -1;
+                }
+
+                .button-56:hover:after {
+                transform: translate(0, 0);
+                }
+
+                .button-56:active {
+                background-color: #ffdeda;
+                outline: 0;
+                }
+
+                .button-56:hover {
+                outline: 0;
+                }
+
+                @media (min-width: 768px) {
+                    .button-56 {
+                    padding: 0 40px;
+                }
+                } ;
+                
+                
+                html {
+        height: 100%;
+        font: 62.5%/1 "Lucida Sans Unicode","Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+        background: #f5f5f5 url(https://s.cdpn.io/79/light-beams.jpg) no-repeat center center;
+        }
+
+        body {
+            width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+        #wrapper {
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+        font-size: 10em;
+        padding: 30px 0;
+        }
+
+        span { 
+        text-shadow: -0.06em 0 red,  0.06em 0 cyan; /* This creates the 3D effect, pretty easy, eh? */
+        letter-spacing: 0.08em; /* make sure the letters don't overlap */
+        }
+
+        p {
+        margin: 0;
+        }
+
+        /* ---------------- Stars ---------------- */
+
+        #stars span {
+        display: inline-block;
+        transform: scale(1);
+        transition: transform 2s cubic-bezier(0, 1, 0, 1);
+        }
+        #stars span:hover {
+        cursor: crosshair;
+        transform: scale(1.3); /* This adds a hover effect */
+        transition: transform .2s cubic-bezier(0, 0.75, 0, 1);
+        }
+        #stars span:active {
+        text-shadow: none; /* Click to disable the 3D effect */
+        }
+
+        /* Below the stars animation */
+        #stars span:nth-child(1), #stars span:nth-child(5) { font-size: 0.3em; animation-delay: 0.2s; }
+        #stars span:nth-child(2), #stars span:nth-child(4) { font-size: 0.5em; animation-delay: 0.1s; }
+        #stars span:nth-child(3) { font-size: 0.8em; animation-delay: 0s; }
+
+        #stars span { animation: stars-animation 3s 50 ease-in-out; }
+
+        @-webkit-keyframes stars-animation {
+        0% { transform: scale(1); }
+        90% { transform: scale(1); }
+        95% { transform: scale(1.3); }
+        100% { transform: scale(1); }
+        }
+
+        #stars:hover span {
+        animation: none; /* Disables the animation on hover */
+        }
+
+
+        /* ---------------- Title ---------------- */
+
+        #title {
+        font-family: Helvetica, Geneva, sans-serif; /* Any font would work, but SansSerif looks better */
+        }
+        #title:focus {
+        outline: none;
+        }
+        #title span {
+        vertical-align: middle;
+        line-height: 1.5em;
+        transition: font-size 2s cubic-bezier(0, 1, 0, 1);
+        }
+        #title span:hover {
+        font-size: 1.5em; /* This adds a hover effect */
+        line-height: 1em;
+        transition: font-size .2s cubic-bezier(0, 0.75, 0, 1);
+        }
+        #title span:active {
+        font-size: 1em;
+        text-shadow: none; /* Click to disable the 3D effect */
+        }
+        #title span::selection {
+        background-color: red; /* This hides the selection */
+        }
+
+
+        /* ---------------- Slogan ---------------- */
+
+        #slogan { font-size: 0.25em; }
+        #slogan span:active { text-shadow: none; }
+
+
+
+
+        /* Below just some styling for the meta info */
+
+        #meta {
+        color: #777;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        text-align: center;
+        text-shadow: rgba(255,255,255,0.5) 0 1px 0;
+        margin: 30px;
+        }
+        #meta strong { font-weight: bold; color: #000; }
+        #meta p:first-child { margin-bottom: 20px; }
+        #meta a { text-decoration: none; color: #7276ff; }
+        #meta a:hover { color: rgba(114,118,255,0.5); }
+        #meta img { vertical-align: text-bottom; }
+
+        /* table.cube_bd{ */
+            /* object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    filter: hue-rotate(20deg);
+    cursor: pointer; */
+    
+    :root {
+  --mainColor: #ff9800;
+}
+
+body {
+  align-items: left;
+  ;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  height: 100vh;
+  justify-content:left;
+}
+
+a {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color:cornsilk;
+  text-decoration: none;
+}
+
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+#biba{
+        align-self: baseline;
+}
+        
+    </style>
+  </head>
+
+  <body>
+  <!--  <div id="wrapper">
+  
+        <p id="stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></p>
+        <p id="title" contenteditable="true" spellcheck="false"><span>3</span><span>D-</span><span>MALL</span></p>
+        <p id="slogan"><span>Shop</span>  <span>in Dimensions</span></p>
+        
+    </div> -->  
+<div class="second">
+    <table>
+        <tr>
+            <td> 
+            <a href="/biba" id="biba"> Biba <a>               
+            </td>
+            <td>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href="/bigbazar">Big-Bazaar</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>
+             <a href="/redchief" id="redchief">Red-Chief</a>               
+            </td>
+        </tr>
+    </table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <table>
+        <tr>
+            <td>
+      <a href="/titan" id="titan">Titan</a>   
+            </td>
+            <td>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href="/reliance">Reliance-Digital</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               
+            </td>
+            <td>
+      <a href="/westside" id="westside">Westside</a>               
+            </td>
+        </tr>
+    </table>
+</div>
+
+    <!--
+      <p><b><a href="/bigbazar">Big-Bazaar</a> </b>  </p>
+      <a href="/biba" id="biba">Biba</a>               
+      <a href="/westside" id="westside">Westside</a>               
+      <a href="/reliance" id="reliance">Reliance Digital</a>               
+      <a href="/redchief" id="redchief">Red-Chief</a>               
+      <a href="/titan" id="titan">Titan</a>   
+
+     --> 
+      
+      
+    
+        <!-- <div class="row">
+            <div class="column">
+                <div class="box-1">
+                     <!-- <div class="conatainer">
+                        <p class="text"> Biba</p>
+                    </div> -->
+                    <!-- <img class="carousel_item-1" src="static\images\Biba-New.png" alt="">
+                    <a name="" id="btn" class="btn btn-success" href="#" role="button">View</a>
+                 </div>  
+            </div>
+
+            <div class="column">
+                <div class="box-2">
+                    <!-- <div class="conatainer">
+                        <p class="text-2"> Big-Bazar</p>
+                    </div> -->
+                    <!-- <img class="carousel_item-2" src="static\images\Big-Bazaar-New.png" alt="">
+         
+                    <a name="" id="btn" class="btn btn-success " href="#" role="button">View</a>
+                </div>  
+            </div> -->
+
+            <!-- <div class="column">
+                <div class="box-3">
+                    <!-- <div class="conatainer">
+                        <p class="text"> Red-Chief</p>
+                    </div> -->
+                    <!-- <img class="carousel_item-3" src="static\images\Red-Chief-New.jpg" alt="">
+                    <a name="" id="btn" class="btn btn-success" href="#" role="button">View</a>
+                </div>  
+            </div>
+
+        </div> --> 
+        
+        
+        <!-- <div class="row">
+            <div class="column">
+                <div class="box-4">
+                     <!-- <div class="conatainer">
+                        <p class="text"> Reliance-Digital</p>
+                    </div> -->
+                    <!-- <img class="carousel_item-4" src="static\images\RelianceDigital-New.png" alt="">
+                    <a name="" id="btn" class="btn btn-success" href="#" role="button">View</a>
+                 </div>  
+            </div> --> 
+
+            <!-- <div class="column">
+                <div class="box-5">
+                    <!-- <div class="conatainer">
+                        <p class="text-5"> Titan</p>
+                    </div> --> 
+                    <!-- <img class="carousel_item-5" src="static\images\Titan-New.png" alt="">
+         
+                    <a name="" id="btn" class="btn btn-success " href="#" role="button">View</a>
+                </div>  
+            </div>
+ -->
+            <!-- <div class="column">
+                <div class="box-6">
+                    <!-- <div class="conatainer">
+                        <p class="text">Westside</p>
+                    </div> -->
+                    <!-- <img class="carousel_item-6" src="static\images\Westside-New.jpg" alt="">
+                    <a name="" id="btn" class="btn btn-success" href="#" role="button">View</a>
+                </div>  
+            </div> --> 
+
+        <!-- </div>     --> 
+          <!-- <img class="carousel_item" src="https://user-images.githubusercontent.com/26748614/112764568-6e9fbd80-9009-11eb-9efe-f52b73ec056c.jpg" alt="">
+          <img class="carousel_item" src="https://user-images.githubusercontent.com/26748614/112764566-6e072700-9009-11eb-9169-d5c82f3edffa.jpg" alt="">
+          <img class="carousel_item" src="https://user-images.githubusercontent.com/26748614/112764565-6d6e9080-9009-11eb-8212-14b983fed967.jpg" alt="">
+          <img class="carousel_item" src="https://user-images.githubusercontent.com/26748614/112764563-6cd5fa00-9009-11eb-99a2-1a8d7492d824.jpg" alt="">
+          <img class="carousel_item" src="https://user-images.githubusercontent.com/26748614/112764562-6ba4cd00-9009-11eb-91fc-18dd1ce8c8a4.jpg" alt="">
+          <img class="carousel_item" src="https://user-images.githubusercontent.com/26748614/112764579-72cbdb00-9009-11eb-8d76-029b1efef4cc.jpg" alt="">
+          <img class="carousel_item" src="https://user-images.githubusercontent.com/26748614/112764577-72334480-9009-11eb-940d-a10aaaab2b64.jpg" alt=""> -->
+        
+       
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="box-1">
+    <label for="biba" class="haeding">Biba</label>
+    <div class="image">
+        <img src="static\images\Biba-Logo.png" alt="">
+    </div>
+    <div class="view">
+        <a name="" id="" class="btn btn-success" href="#" role="button">View</a>
+    </div>
+</div>
+
+<div class="box-2">
+    <label for="" class="haeding">Big-Bazar</label>
+    <div class="image">
+        <img src="" alt="">
+    </div>
+    <div class="view">
+      <a name="" id="" class="btn btn-success" href="#" role="button">View</a>
+    </div>
+</div>
+<div class="box-3">
+    <label for="" class="haeding">Red-Chief</label>
+    <div class="image">
+        <img src="" alt="">
+    </div>
+    <div class="view">
+      <a name="" id="" class="btn btn-success" href="#" role="button">View</a>
+    </div>
+</div>
+<div class="box-4">
+    <label for="" class="haeding">Reliance-Digital</label>
+    <div class="image">
+        <img src="" alt="">
+    </div>
+    <div class="view">
+      <a name="" id="" class="btn btn-success" href="#" role="button">View</a>
+    </div>
+</div>
+<div class="box-5">
+    <label for="" class="haeding">Titan</label>
+    <div class="image">
+        <img src="static\images\Titan-Logo.png" alt="">
+    </div>
+    <div class="view">
+      <a name="" id="" class="btn btn-success" href="#" role="button">View</a>
+    </div>
+</div>
+<div class="box-6">
+    <label for="" class="haeding">Westside</label>
+    <div class="image">
+        <img src="static\images\Westside-Logo.jfif" alt="">
+    </div>
+    <div class="view">
+      <a name="" id="" class="btn btn-success" href="#" role="button">View</a>
+    </div>
+</div> -->
+
+<!-- <div class="grid-container">
+            <div class="image-1">
+                 <img src="static\images\Biba-Logo.png" alt="biba">
+            </div>
+            <div class="image-2">
+                <img src="static\images\Big-Bazaar-Logo.png" alt="big-bazar">
+            </div>
+            <div class="image-3">
+                <img src="static\images\Red-Chief-Logo.jfif" alt="red-chief">
+            </div>
+            <div class="image-4">
+                <img src="static\images\RelianceDigital-Logo.png" alt="reliance-digital">
+            </div>
+            <div class="image-5">
+                <img src="static\images\Titan-Logo.png" alt="titan">
+            </div>
+            <div class="image-6">
+                <img src="static\images\Westside-Logo.jfif" alt="westside">
+            </div> -->
+            
+            <!-- <table width="99%" border="1">
+                <tr>
+                 <td>
+                    <label for="biba">Biba</label>
+                     <img src="static\images\Biba-Logo.png" alt="logo 1">
+                     <a name="view" id="view" class="btn btn-success" href="" role="button">View</a>
+                </td>
+                 <td>
+                     <label for="big-bazar">Big-Bazar</label>
+                     <p align="center"><img src="static\images\Big-Bazaar-Logo.png" alt="logo 2"></p>
+                     <a name="view" id="view" class="btn btn-success" href="" role="button">View</a>
+                </td>
+                 <td align="right">
+                     <label for="red-chief">Red-Chief</label>
+                     <img src="static\images\Red-Chief-Logo.jfif" alt="logo 3">
+                     <a name="view" id="view" class="btn btn-success" href="" role="button">View</a>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="reliance-digital">Reliance-Digital</label>
+                        <img src="static\images\RelianceDigital-Logo.png" alt="logo 1">
+                        <a name="view" id="view" class="btn btn-success" href="" role="button">View</a>
+                    </td>
+                    <td>
+                        <label for="Titan">Titan</label>
+                        <p align="center"><img src="static\images\Titan-Logo.png" alt="logo 2"></p>
+                        <a name="view" id="view" class="btn btn-success" href="" role="button">View</a>
+                    </td>
+                    <td align="right">
+                        <label for="Westside">Westside</label>
+                        <img src="static\images\Westside-Logo.jfif" alt="logo 3">
+                        <a name="view" id="view" class="btn btn-success" href="" role="button">View</a>
+                    </td>
+                   </tr>
+               </table>
+    </div> -->

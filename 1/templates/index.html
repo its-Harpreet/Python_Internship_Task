@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+    
+{% block css %}
+<style>
+    body{
+        background-color: beige;
+        background-image: url('/static/images/news_logo.svg');
+        background-repeat: no-repeat;
+        background-position:right;
+    }
+    .row>* {
+        flex-shrink: 0;
+        width: 75%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x)/ 2);
+        padding-left: calc(var(--bs-gutter-x)/ 2);
+        margin-top: var(--bs-gutter-y);
+    }
+</style>
+{% endblock css %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12-md-6">
+            <div class="card shadow-lg m-5">                
+                <form  method="POST" class="p-2">
+                    <div class="mb-3">
+                        <label for="" class="form-label">News Headline</label>
+                        <input type="text" class="form-control" name="headline" id="headline" aria-describedby="helpId" placeholder="">
+                    </div> 
+                    <div class="mb-3">
+                        <label for="" class="form-label">News Content</label>
+                        <textarea class="form-control" rows="5" cols="30" name="content" placeholder="news content here"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success ">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

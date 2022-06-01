@@ -1,0 +1,81 @@
+<!-- <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Saved News Content</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Heading</th>
+                    <th>Content</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+            
+        </table>
+    </body>
+    </html> -->
+    
+    
+    
+    {% extends 'base.html' %}
+    
+    {% block css %}
+    <style>.table {
+        --bs-table-bg: linen;
+        --bs-table-accent-bg: honeydew;
+        --bs-table-striped-color: #212528;
+        --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+        --bs-table-active-color: #212527;
+        --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+        --bs-table-hover-color: #212529;
+        --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+        width: 100%;
+        margin-bottom: 14rem;
+        color: darkslategrey;
+        vertical-align: baseline;
+        border-color: blanchedalmond;
+    }
+    table {
+        caption-side: bottom;
+        border-collapse: separate;
+    }
+</style>
+{% endblock css %}
+
+
+{% block body %}
+<i class="fa fa-align-center" aria-hidden="true"><center><h2>News</h2></center></i>
+<div class="card shadow-lg m-5">
+    <table class="table table-striped|sm|bordered table-inverse table-responsive">
+        <thead class="thead-inverse|thead-default">
+            <tr>
+                <th><b>Id</b></th>   
+                <th><b>News Headline</b></th>
+                <th><b>News Content</b></th>
+                <th><b>Predict</b></th>
+                <th><b>Delete</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in records %}
+            <tr>
+                <td >{{item.id}}</td>
+                <td >{{item.headline}}</td>
+                <td >{{item.content}}</td>
+                <td ><a href="">Predict</a></td>
+                <td ><a href="/delete/{{item.id}}">Delete</a></td>
+            </tr>
+            {% endfor %}    
+        </tbody>    
+    </table>
+</div>
+
+{% endblock body %}
+
